@@ -1,0 +1,19 @@
+{
+  "name": "breakpoint-img-tool",
+  "version": "1.0.0",
+  "description": "From orginal images generates optimised images in various widths for web performance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bogdandrema@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "csv-write-stream": "^2.0.0",
+    "imagemin": "^5.3.1",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "readdirp": "^2.1.0",
+    "sharp": "^0.18.2"
+  }
+}
