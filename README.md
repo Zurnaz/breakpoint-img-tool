@@ -6,14 +6,14 @@ Probably better to use a CDN for bigger sites but it is useful for internal webs
 
 ### Notes: 
 
-..* It mimics the directory structure inside the input folder in the output folder
-..* It overwrites the csv from the previous build
-..* It overwrites images from the previous build but does not delete ones where there is no naming conflict
-..* File names are used as the ID for the CSV 
+* It mimics the directory structure inside the input folder in the output folder
+* It overwrites the csv from the previous build
+* It overwrites images from the previous build but does not delete ones where there is no naming conflict
+* File names are used as the ID for the CSV 
 
 ## Usage
 
-### Requirements
+#### Requirements
 
 You need these installed:
 ```
@@ -21,14 +21,14 @@ node.js
 npm
 ```
 
-### Setup
+#### Setup
 
 Just run
 ```
 npm install
 ```
 
-### Running
+#### Running
 
 ```
 node index.js
@@ -38,7 +38,7 @@ node index.js
 
 It is all hard coded in the file in the config area. There are comments indicating what each section does so hopefully should not be too hard to tweak.
 
-### Re-run
+#### Re-run
 
 The output items are not deleted but the images get overwritten if the input files are not changed and if an original file gets renamed a new one is created
 
@@ -98,13 +98,13 @@ image-file-name-2     |            |/public/img/image-file-name-2-w327.png    |/
 
 
 ## TODO/Ideas
-..* Try to find a good way to auto populate the description column
-..* Add option to enforce unique files naming or imageids to detect duplicates
-..* Possibly generate a unique ID based on folder structure it took to get to the file
-..* Fix config to possibly extra parameters and a default config
-..* Thinking of modifying the script to generate two sets of files one for webp and fallback in the original format ie jpg | png etc
-..* Possibly add crc check duplicate file detection in original
-..* Possibly add detection on files that have already been processed from a previous run and skip based on config setting
-..* Possibly generate a unique ID based on folder structure it took to get to the file
+* Try to find a good way to auto populate the description column
+* Add option to enforce unique files naming or imageids to detect duplicates
+* Possibly generate a unique ID based on folder structure it took to get to the file
+* Fix config to possibly extra parameters and a default config
+* Thinking of modifying the script to generate two sets of files one for webp and fallback in the original format ie jpg | png etc
+* Possibly add crc check duplicate file detection in original
+* Possibly add detection on files that have already been processed from a previous run and skip based on config setting
+* Possibly generate a unique ID based on folder structure it took to get to the file
 
 ### Contributions welcome
